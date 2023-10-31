@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kenyatta University Sports</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="data:image/png;base64,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" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+<!--Mark is my work mate....remember this-->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+<!--Put a ku logo here-->
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">KU Sports <br><h6>Integrating Technology <br>Into Sports</h6></a></h1><br>
+      <h3></h3>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Games</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Swimming</a></li>
+              <li class="dropdown"><a href="#"><span>Racket Games</span> <i class="bi bi-chevron-right"></i></a>
+                <li class="dropdown"><a href="#"><span>Ball games</span> <i class="bi bi-chevron-right"></i></a>
+                <li class="dropdown"><a href="#"><span>Board Games</span> <i class="bi bi-chevron-right"></i></a>
+                  <li class="dropdown"><a href="#"><span>Martial Arts</span> <i class="bi bi-chevron-right"></i></a>
+                     <li class="dropdown"><a href="#"><span>Batting Games</span> <i class="bi bi-chevron-right"></i></a>
+                    <li class="dropdown"><a href="#"><span>Other Games</span><i class="bi bi-chevron-right"></i></a>
+
+                <ul>
+                  <li><a href="https://www.bing.com/ck/a?!&&p=20f8d859968cda27JmltdHM9MTY5ODUzNzYwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE3MQ&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=kenyatta+university+swimming+team&u=a1aHR0cHM6Ly9rdS5hYy5rZS9zcG9ydHMvaW5kZXgucGhwL3Nwb3J0cy10ZWFtcy8yMDE1LTA4LTEzLTA4LTM3LTQ2&ntb=1" target="_blank">Soccer</a></li>
+                  <li><a href="#">Basket Ball</a></li>
+                  <li><a href="#">Rugby</a></li>
+                  <li><a href="#">Softball</a></li>
+                  <li><a href="#">Volley Ball</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Athletics</a></li>
+              <li><a href="#">Skating</a></li>
+              <li><a href="#">Cycling</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Welcome to KU Sports Platform</h1>
+          <h2>    
+            Our website is your portal to a world of sporting excitement. Explore the latest updates, in-depth analyses, and exclusive interviews with athletes.
+            <!--  Dive into our comprehensive coverage of university sports, local and international competitions, and the incredible stories that make the sports world so captivating. Whether you're a seasoned athlete, a fervent fan, or just beginning your sports journey, we have something for everyone. Join us in celebrating the indomitable spirit of sportsmanship, the pursuit of excellence, and the joy of victory-->.
+          </h2>
+           
+            
+           
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-store-line"></i>
+            <h3><a href="https://youtu.be/TAuilXskXhE"_top>Latest Hot News</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="">Analysis and Opininon</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line"></i>
+            <h3><a href="">Score Boards, Polls and quizzes</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line"></i>
+            <h3><a href="">KU Internal Games</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-database-2-line"></i>
+            <h3><a href="https://www.youtube.com/watch?v=1Gn-KfLRyTc" target="_blank">Inter-University Games</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+             
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7tIuZIpN8Fs?si=jZ5Y6bTjkzTD1uxF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iamGRDxDZmY?si=W8NbTRIwYPL13JRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h4><strong>Welcome to Kenyatta University sports, your ultimate destination for everything in sports. We're more than just a website; we're a passionate community of sports enthusiasts, athletes, and fans. Our mission is to bring you closer to the world of sports, to inspire, educate, entertain, and to foster a sense of belonging among sports lovers worldwide.We are a group fostering to improve sport activity by majoring and focusing on technology and its application in sports.</h4></strong>
+            <p class="fst-italic">
+             Kenyatta University website was founded in August 2023 by founders Moitui Zablon and Mark Wandera, lifelong Modern Sports Practitoners and enthusiasts, Students at Kenyatta University an institution empowering change through technology. The idea behind this platform was simple,It came from our instructor <b>Dr. Kiploto Boit</b> that instructed us to create a space where sports enthusiasts could come together to celebrate their passion and find everything they need to stay updated and engaged with the sports they love as. Through constant consultation from him and research we were able to come up with this platform.
+            </p>
+            <!--Change to insights-->
+            <h4><strong>Our Focus</strong></h4>
+            <p>we're not just about scores and statistics; we're about the heart and soul of sports. We're dedicated to bringing you the best sports content, providing a platform for discussions and debates, and supporting various sports-related initiatives and organizations.We cover a wide range of sports,as from
+            <ul>
+              <li><i class="ri-check-double-line"></i> Indoor Games</li>
+              <li><i class="ri-check-double-line"></i> Outdoor Gemes &</li>
+              <li><i class="ri-check-double-line"></i> Board Games</li>
+              <li><i class="ri-check-double-line"></i> Card Games</li>
+              <li><i class="ri-check-double-line"></i> Vedio Games </li>
+              <li><i class="ri-check-double-line"></i> Party Games</li>
+              <li><i class="ri-check-double-line"></i> Puzzle Games</li>
+
+            </ul> 
+            
+                providing in-depth articles, videos, and resources to satisfy the curiosity of sports enthusiasts of all kinds.We have exciting plans for the future, including [Brief Mention of Upcoming Projects and Initiatives]. Stay tuned for more as we continue to grow and evolve.
+
+Thank you for being part of the Kenyatta University Sports community. Together, we'll continue to celebrate the world of sports and inspire each other to new heights of sportsmanship and excellence.</p>
+
+              <!--add other games or change              <li><i class="ri-check-double-line"></i> </li>
+              <li><i class="ri-check-double-line"></i> </li>
+              <li><i class="ri-check-double-line"></i> </li>
+            </ul>-->
+
+
+            <!-- <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>-->
+            <h4><strong>Our Future Plan</strong></h4>
+            <p>We have exciting plans for the future, including Patnering with other compitent sport organizations to ensure up-to-date quality information. Stay tuned for more as we continue to grow and evolve.
+
+              Thank you for being part of the Kenyatta University Sports community. Together, we'll continue to celebrate the world of sports and inspire each other to new heights of sportsmanship and excellence.</p>
+
+            <h4><strong>Our Community</strong></h4>
+            <p>
+              We believe that sports are more enjoyable when shared with others who share your passion. That's why we've created the followind Links to Community Features, Forums, and other  Social Media Platforms, where you can engage with fellow sports lovers, share your opinions, and celebrate the victories and defeats of your favorite teams.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+          <h4><strong>Other KU Sports Social media Pages</strong></h4>
+
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <!--<div class="swiper-slide"><a href="whatsapp://send?text=Hello World "title=Share On Whatsapp"> <img src="assets/img/clients/client-1.jpeg" class="img-fluid" alt="" </a></div>-->
+            
+            <div class="swiper-slide"><a href="https://chat.whatsapp.com/GSPmhJWbQjYFTzGvoFVW3N" target="_blank"><img src="assets/img/clients/client-1.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://t.me/+9auTnTHnaDk3MzNk" target="_blank"><img src="assets/img/clients/client-2.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/clients/client-3.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.linkedin.com/groups/9529107/" target="_blank"><img src="assets/img/clients/client-4.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://join.skype.com/invite/NOS2dEAv8Oyv" target="_blank"><img src="assets/img/clients/client-5.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://discord.gg/s3qhnRASAR" target="_blank"><img src="assets/img/clients/client-6.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.facebook.com/groups/181163251707396/" target="_blank"><img src="assets/img/clients/client-7.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https:twitter.com/ctrl.msf_yrn3" target="_blank"><img src="assets/img/clients/client-8.jpeg" class="img-fluid" alt=""></a></div>
+          
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+<!--======Open Social Media Pages Section=====-->
+
+<!-- compare this and the<a href="whatsapp://send?abid=phonenumber&text=Hello%2C%20World!">Send Message</a>-->
+
+
+<!---====End of Social Media Pages Section-->
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-receipt"></i>
+              <h4>Vission</h4>
+
+<!--change the website name-->
+
+              <p>To be the ultimate destination for sports enthusiasts, where passion meets information, fostering a global community of fans who come together to celebrate the spirit of competition, inspire active lifestyles, and promote inclusivity in the world of sports <b>Kenyatta University Sports <!--change the web name--></b>,We convey the overarching goal of your sports website, which is to have a positive and transformative impact on the sports world by providing easy access to information, resources, and connections for athletes, fans, and sports enthusiasts. It suggests that our website will play a pivotal role in bringing the sports community together and enhancing the way people engage with sports.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-cube-alt"></i>
+              <h4>Mission</h4>
+              <p> <b>Kenyatta University sports</b> our mission is to be the ultimate destination for sports enthusiasts, athletes, and fans alike. We are dedicated to delivering up-to-the-minute news, insightful analysis, and engaging content that celebrates the world of sports in all its glory.
+
+                We strive to foster a sense of community and connection, bringing people together from all walks of life through their shared love of sports. Our commitment to accuracy, integrity, and a passion for the game ensures that we provide a trusted source for all things sports-related.
+                
+                Through the power of technology and storytelling, we aim to inspire, inform, and entertain our audience, making every visit to our site a rewarding experience. Whether you're a seasoned athlete, a dedicated fan, or a casual observer, we invite you to join us on this exhilarating journey through the sports world.
+                
+                At <b>Kenyatta University Sports,</b> it's not just about the games; it's about the spirit, the stories, and the thrill of competition. We're here to keep you connected, informed, and inspired, so you can experience the magic of sports like never before."
+                
+                Feel free to customize this mission statement to suit your specific sports website's goals and values.
+                
+                
+                
+                
+                </p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-images"></i>
+              <h4>Goals and Objectives</h4>
+              <p>At Kenyatta University Website,we are committed to delivering the best possible experience to our visitors, athletes, and sports enthusiasts. Our goals and objectives are driven by our dedication to becoming a premier destination for sports content and community.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-shield"></i>
+              <h4>Motivation</h4>
+              <p><b>Kenyatta University Sports</b> is an encompass where champions find their drive,we are motivated to igniting the passion and drive of sports enthusiasts, encouraging them to strive for excellence and greatness in their athletic pursuits or simply enjoy the world of sports to the fullest.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+          <h4><strong>Other Related Sources</strong></h4>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=a7d5063c1a14b954JmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE4NA&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=kenyatta+university+sports+department&u=a1aHR0cHM6Ly93d3cua3UuYWMua2Uvc3BvcnRzLw&ntb=1" target="_blank"><img src="assets/img/patners/patners-1.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=e3a9cb6f9fec0300JmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE5Mw&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=espn+website&u=a1aHR0cHM6Ly93d3cuZXNwbi5jb20v&ntb=1" target="_blank"><img src="assets/img/patners/patners-2.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=999b476f456fd670JmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE4MA&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=vidgo+website&u=a1aHR0cHM6Ly93d3cudmlkZ28uY29tL3BsYW5z&ntb=1" target="_blank"><img src="assets/img/patners/patners-3.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=94582a1a294da83fJmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTIwNQ&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=ymca&u=a1aHR0cHM6Ly95bWNha2VueWEub3JnLw&ntb=1" target="_blank"><img src="assets/img/patners/patners-4.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=f7a12ccb665ee1bdJmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE3NQ&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=yalla+live+streaming&u=a1aHR0cHM6Ly93d3cueWFsbGFzaG9vdC1lbmdsaXNoLmNvbS8&ntb=1" target="_blank"><img src="assets/img/patners/patners-5.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=9c7667d7b47d24edJmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE3NA&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=score808&u=a1aHR0cHM6Ly93d3cuODA4c2NvcmV0djIuY29tLw&ntb=1" target="_blank"><img src="assets/img/patners/patners-6.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=bbd3918f0ca2e172JmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTIwNA&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=sky+sports&u=a1aHR0cHM6Ly93d3cuc2t5c3BvcnRzLmNvbS8&ntb=1" target="_blank"><img src="assets/img/patners/patners-7.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bing.com/ck/a?!&&p=6f5170d88947da01JmltdHM9MTY5ODM2NDgwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTIwMg&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=kenyatta+university+television&u=a1aHR0cDovL2t1dHYuY28ua2Uv&ntb=1" target="_blank"><img src="assets/img/patners/patners-8.jpeg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+
+    
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check Our Core Services</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Match Analysis and predictions</a></h4>
+              <p>Dive Deep into Match Analysis! Gain a fresh perspective on your favorite sports matches. Our in-depth analyses reveal key plays, tactics, and the drama behind every game. Join us for a closer look at the action, strategy, and standout performances that define the sports you love and stay informed and make informed bets or just enjoy a deeper understanding of the game."</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Individual Player Profile</a></h4>
+              <p>Meet the Stars and Explore Individual Player Profiles! Delve into the lives and careers of your favorite athletes. Our player profiles offer a glimpse into their journey, achievements, and the impact they've made on their respective sports.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Fixtures, Game days and Training</a></h4>
+              <p>Stay Informed, Explore Fixtures, Game Days, and Training Schedules! Get ready for the upcoming matches and training sessions. Find out when your favorite teams are in action, plan your game days, and stay updated with training schedules. be with us to keep your sports calendar on point!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Ticketing and Bookings</a></h4>
+              <p>Discover Ticketing and Booking! Get closer to the action with hassle-free ticketing and booking options online. Find the best seats, secure your tickets, and plan your sports adventures with ease. Join us to make your game day experience unforgettable!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Live Match Streaming</a></h4>
+              <p>Never Miss a Moment! Access Live Match Streaming! Watch your favorite sports events in real-time, wherever you are. Our live streaming service brings the excitement directly to your screen, so you can cheer on your team from anywhere in the world. Join us for a front-row seat to all the action.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Therapy and other sessions</a></h4>
+              <p> Explore Therapy, Counseling Sessions and Other Social Sessions. Take care of your well-being with expert-led proffessional services. We're here to provide a safe and confidential space for your personal growth and healing journey.</p>
+            </div>
+          </div>
+
+        </div>
+<!--Before the end we can change one to be the advertisements and sponsors subwebsite-->
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Get Ready for the Action! Stay Tuned for Our Upcoming FISU Games. Be the First to Join and Never Miss a Moment of Sporting Thrills.<br>Stay in the Know! <br>Subscribe to Our Newsletter for the Latest Sports Updates and Exclusive Content.</p>
+          <a class="cta-btn" href="https://www.youtube.com/watch?v=zTDDIX2EgVw&pp=ygU-a2VueWF0dGEgdW5pdmVyc2l0eSBhcnJpdmluZyBpbiBjaGluYSAyMDIzIGZvciBmaXN1IHVuaXZlcnNpdHk%3D" target="_blank">Call To Action</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Insights</h2>
+          <p>Check our Portfolio</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Vedios</li>
+              <li data-filter=".filter-card">Images</li>
+              <li data-filter=".filter-web">Cards</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kenyatta University Rugby team finals(The Black Blads)</h4>
+                <p>image</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.bing.com/videos/riverview/relatedvideo?&q=kenyatta+university+rugby+finals&&mid=428501953C354E379AEB428501953C354E379AEB&&FORM=VRDGAR" target="_blank title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dominating Sports Globally</h4>
+                <p>The Champions Of Africa</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=zTDDIX2EgVw&pp=ygUla2VueWF0dGEgdW5pdmVyc2l0eSBzcG9ydHMgZmFjaWxpdGllcw%3D%3D" target="_blank title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Internal Sports In the University</h4>
+                <p>Interschool Athletics</p>
+                <div class="portfolio-links">
+                 <a href="assets/img/portfolio/portfolio-3.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=1Gn-KfLRyTc&pp=ygUia2VudGF0dGEgdW5pdmVyc2l0eSBpbnRlcm5hbCBnYW1lcw%3D%3D" target="_blank title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Embracing Gender Equality</h4>
+                <p>promoting equality in sports</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=z_T0hodq63M&pp=ygUea2VueWF0dGEgdW5pdmVyc2l0eSB3b21lbiB0ZWFt" target="_blank title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>What a Comeback at FISU China</h4>
+                <p>image</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.bing.com/ck/a?!&&p=b5c5479a6c3576a8JmltdHM9MTY5ODI3ODQwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE2NA&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=kenyatta+university+at+china+fisu+finals&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0Zhc3VBZnJpY2FVbml2ZXJzaXR5U3BvcnRzL3ZpZGVvcy8lRjAlOUQlOTklODElRjAlOUQlOTklODQlRjAlOUQlOTklOEUlRjAlOUQlOTklOTAtJUYwJTlEJTk5JTkwJUYwJTlEJTk5JUEzJUYwJTlEJTk5JTlFJUYwJTlEJTk5JUFCJUYwJTlEJTk5JTlBJUYwJTlEJTk5JUE3JUYwJTlEJTk5JUE4JUYwJTlEJTk5JTlFJUYwJTlEJTk5JUE5JUYwJTlEJTk5JUFFLSVGMCU5RCU5OSU5MiVGMCU5RCU5OSVBNCVGMCU5RCU5OSVBNyVGMCU5RCU5OSVBMSVGMCU5RCU5OSU5OS0lRjAlOUQlOTglQkUlRjAlOUQlOTklQUElRjAlOUQlOTklQTUtJUYwJTlEJTk5JTgxJUYwJTlEJTk5JUE0JUYwJTlEJTk5JUE0JUYwJTlEJTk5JUE5JUYwJTlEJTk5JTk3JUYwJTlEJTk5JTk2JUYwJTlEJTk5JUExJUYwJTlEJTk5JUExLXRoaXMtaXMtd2hhdC1jaGFtcGlvbnMtYXJlLW1hZGUtb2Yta2VueWF0dGEtdS8xMDEwMzE2MzI2ODQ5NTA4Lw&ntb=1" target="_blank" title="Kenyatta University defeats Croatia University 4-2"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app"><iframe width="560" height="315" src="https://www.youtube.com/embed/hFOxutDjYrw?si=pNHIjY_4TUvuoevo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<!--====Code to replace coach mary and the swimming team
+          
+            <div class="portfolio-wrap">
+             <div class="col-lg-4 col-md-6 portfolio-item filter-app"></div> 
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Maintaining a hihger cultural heritage of our legacy</h4>
+                <p>Winning various competition Globally</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://youtu.be/bpHttLvnOR4?si=Rpm4HwAJW2oS7gjX" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+=====-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Contact indoor games</h4>
+                <p>Tae Kwon Do</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.bing.com/videos/riverview/relatedvideo?&q=kenyattauniversity+judo+ffinsls&&mid=487404BD06DBF17E3415487404BD06DBF17E3415&&FORM=VRDGAR" target="_blank title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Inter-University Hockey Games</h4>
+                <p>vedio</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=IIbsqS9fTHg" target="_blank title="See a youtube vedio"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Visit WHO Advantages of Sports to  Health</h4>
+                <p>vedio</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.bing.com/ck/a?!&&p=5fc0a693485e696aJmltdHM9MTY5ODI3ODQwMCZpZ3VpZD0yNTcwNDA3My01MDE2LTZiNTItM2QzOC01M2Y4NTFhNjZhNDkmaW5zaWQ9NTE5NQ&ptn=3&hsh=3&fclid=25704073-5016-6b52-3d38-53f851a66a49&psq=world+health+org+advantages+of+sportd&u=a1aHR0cHM6Ly93d3cud2hvLmludC9pbml0aWF0aXZlcy9zcG9ydHMtYW5kLWhlYWx0aA&ntb=1" target="_blank title="Visit WHO Advantages of Sports to  Health"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+         <!--am linking the rugby immage with <a href="" target="_blank"></a>-->
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Accolades & Milestones</h3>
+              <p>
+                Explore our path of achievements, accolades,proffessional highlights and the wealth of experience gained over the time engaged in work, including a showcase of notable projects that define our professional journey.
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Happy Clients</strong> Number of clients from our teams and other individual clients that have benefited from our shedules.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects</strong> The projects that we have already completed and those in position of being completed inorder to improve the general perfomance and enhance efficiency of technology application in sports.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Years of experience</strong> Number of years that reflect the average duration that we have been doing research and showcasing our skills  inorder to facilitate a better next-generation.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Awards</strong> Number of high rank positions that we have held in the mentioned years reflecting a better perfomance, motivation and embracing change from individual level, Community and even Globally.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+      
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Dr. Kiploto Boit</h3>
+                <h4>Class Representative & motivator</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The changes hernesed in technology especially on sports has brought a very significant result in the sport industry. As a proffessional, technology practitioner and motivator, I've had the privilege of witnessing the transformative power of sports on individuals and communities use technology. KU Sports has harnessed that power in a unique way, bringing together athletes, fans, and enthusiasts from all walks of life. Their dedication to not only promoting excellence on the field but also fostering personal growth and motivation is truly commendable. This is a platform that's not just about sports; it's about cultivating the human spirit. I'm proud to be associated with this team in this collective endeavor to uplift and inspire through the world of sports and most significantly witnessing my students apply the knowledge that i deliver to them.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Nelson</h3>
+                <h4>Sport Science Coach and Team Advisor</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  As both a coach and a project advisor, I've witnessed the transformative power of sports in fostering teamwork, discipline, and personal growth. Kenyatta University Sports Website is a valuable resource for athletes and enthusiasts to explore the world of sports, enhance their skills, and stay connected with the latest in the sports arena.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jeph</h3>
+                <h4>IT Specialist and Consultant</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Working with KU Sports  has been a remarkable experience. As an IT specialist and consultant, my focus is on efficiency and effectiveness, and I've found a perfect partner in the sports industry with KU Sports. Their commitment to leveraging technology for the advancement of sports is both inspiring and effective. Together, we've harnessed the power of IT solutions to streamline processes, enhance fan engagement, and improve the overall sports experience. This web is not just a sports platform; it's a hub of innovation and progress, where technology and athletics seamlessly merge. I'm proud to be a part of this journey, contributing to the digital transformation of the sports world.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Ian Maina</h3>
+                <h4>Freelancer and Sport Psychologist</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  As a psychologist and a dedicated sports enthusiast, I've had the privilege of working with Kenyatta University Sports team to contribute to their mission of enhancing athletic performance. It's been an incredible journey, combining my expertise in psychology with my passion for sports. The team at Kenyatta University is committed to achieving excellence not only on the field but also in the minds of athletes. I'm proud to be part of this endeavor, helping athletes unlock their full potential by addressing the mental aspects of their performance. Together, we're breaking down barriers and reaching new heights in the world of sports. [Your Website's Name] is the perfect platform to bridge the gap between sports and psychology, and I'm excited to continue this incredible partnership.
+                                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Senior Kevin</h3>
+                <h4>Entrepreneur & Project Advisor</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Collaborating with KU Sports team as a project consultant has been a game-changer for my entrepreneurial journey in the sports industry. Their unique blend of sports expertise and strategic vision has empowered me to navigate the competitive landscape more effectively. With their guidance, we've been able to turn ideas into reality, shaping the future of sports innovation. KU Sports not only understands the business of sports but also has a genuine passion for it, making them a valuable partner in every sense. Their commitment to excellence has been instrumental in helping me achieve my goals and build a thriving sports-related venture.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Check our Team</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://twitter.com/home" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100070905452738" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/alpha_cent021/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/msf-bennett-480b95298/?lipi=urn%3Ali%3Apage%3Ad_flagship3_groups_entity%3BAZUD7aQtQjyblWECkyqpkA%3D%3D" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Brenda Muthoni</h4>
+                <span>Research & Data Collection Lead</span>
+                <p>Brenda Muthoni is a seasoned researcher with a degree. in Information Technology. With over 8 years of experience in academic and industry research, she brings a wealth of expertise to our team. Her research interests include Sport Ethics and Misinformation,Sports information and Sports Impact,Branding,Health Communication and Fun engagement. She has helped the team to published numerous articles in reputable journals. She is dedicated to advancing our understanding of research methods<!--find the correct tppic--> and is committed to delivering accurate and insightful research to our readers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://twitter.com/home" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100070905452738" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/alpha_cent021/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/msf-bennett-480b95298/?lipi=urn%3Ali%3Apage%3Ad_flagship3_groups_entity%3BAZUD7aQtQjyblWECkyqpkA%3D%3D" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Moitui Zablon</h4>
+                <span>Data Analyst</span>
+                <p>Moitui Zablon is our go-to data expert, responsible for analyzing and interpreting complex research data. With a background in Data Science, he has a knack for turning numbers into actionable insights. Zablon is passionate about making data-driven research accessible to all and has a keen interest in Player perfomance analysis,Vedio and Image analysis, Team Strategy and Game Analysis,Wearablae technology data, Game simulation and Strategy optimization,Athlete Biomechanics and motion analysis and Sport betting and odd analysis. He plays a vital role in ensuring our research is both comprehensive and easy to understand.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://x.com/MarkOkondo2?t=pPHe-hF8WIjQsc2sY1scOA&s=08" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100069678193293" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/marc_ellojay7?igshid=YWYwM2I1ZDdmOQ==" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/mark-okondo-001264242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mark Wandera</h4>
+                <span>Medical Research Advisor</span>
+                <p> Dr. Mark wandera is a licensed medical doctor with a specialization in Sport Medicine and Physiotherapy. He acts as our medical research advisor, providing valuable insights and ensuring the accuracy of health-related research. With his extensive clinical experience and a deep commitment to evidence-based medicine, Dr. Mark helps us deliver up-to-date and reliable health research to our audience and athlete in our teams and clinics.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://twitter.com/home" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100070905452738" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/alpha_cent021/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/msf-bennett-480b95298/?lipi=urn%3Ali%3Apage%3Ad_flagship3_groups_entity%3BAZUD7aQtQjyblWECkyqpkA%3D%3D" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Anita Becky</h4>
+                <span>Content Manager and Writter</span>
+                <p>Anita Becky is our Sports Content Manager and Writer, dedicated to delivering engaging and insightful sports coverage. With a background in journalism and a passion for sports, she crafts compelling stories that capture the thrill of the game. Sarah specializes in most sports, offering expert analysis and up-to-the-minute updates. Stay in the game with Florence and her team for real-time sports commentary.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+<!--try showing direction-->
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9692288242045!2d36.93410037418607!3d-1.1820776988066122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3ff0f27b27f5%3A0xb0e3964cef8200a0!2sKenyatta%20University%2C%20Main%20Campus!5e0!3m2!1sen!2ske!4v1698265157283!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!--I dont know where this code was extracted from.,"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" frameborder="0" allowfullscreen></iframe>"-->
+
+        <!--This is my location iframe below-->
+        <!--This is the downtown NY location "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31911.738185818813!2d36.9040618041464!3d-1.1834382235339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f09067bad99%3A0xf16d95cc142da70a!2sKenyatta%20University%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1698264427122!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"-->
+
+        <!--
+          <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="gn ghttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31911.738185818813!2d36.9040618041464!3d-1.1834382235339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f09067bad99%3A0xf16d95cc142da70a!2sKenyatta%20University%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1698264427122!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" frameborder="0" allowfullscreen></iframe>
+        </div>
+      -->
+
+      <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d63822.29946925831!2d36.83787019526359!3d-1.2335229311888893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x182f116041c8127d%3A0x97121230126f6bd0!2sCBD%2C%20Tom%20Mboya%20Street%2C%20Nairobi!3m2!1d-1.284999!2d36.825892499999995!4m5!1s0x182f3ff0f27b27f5%3A0xb0e3964cef8200a0!2sKenyatta%20University%2C%20Main%20Campus%2C%20Security%20Office%2C%20Nairobi!3m2!1d-1.1820777!2d36.9366753!5e0!3m2!1sen!2ske!4v1698266104747!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+<!--You can add a different location and direction-->
+<!-- How to add direction and location as a logo.,,,-->
+
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Kahawa, Kasarani subcounty, Nairobi City County</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p> <a href="mailto:Kenyattauniversitysports@gmail.com" target="_blank">Kenyattauniversitysports@gmail.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+254 7235 03743<br>+254 7946 24926</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>KU SPORTS<span>.</span></h3>
+              <p>
+                Kenyatta University<br>
+                Thika Road, Kenya<br><br>
+                <strong>Phone: 1</strong> +254 7235 03743<br>
+                <strong>Phone:2</strong> +254 7946 24926
+                <br>
+                <strong>Email:</strong> Kenyattauniversitysports@gmail.com
+                <br>
+                <!--====== <a href = "Kenyattauniversitysports@gmail.com?How can I Access Your Services">
+                  Kenyattauniversitysports@gmail.com
+                  </a>======-->
+               
+
+              </p>
+              <div class="social-links mt-3">
+                <a href="https:twitter.com/ctrl.msf_yrn3" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/groups/181163251707396/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://join.skype.com/invite/NOS2dEAv8Oyv" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="https://www.linkedin.com/groups/9529107/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Go To</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Other Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://editor.wix.com/html/editor/review/services" target="_blank">Career mentorship programms</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Physiotherapy and Rehabilitation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Wellness and Sensitization</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Spornsorship</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Sports Advertisement</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Follow our social media accounts and subscribe to be informed and getting personalized infomation on latest sport news.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kenyatta University Sports</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by: Kenyatta University Sports<a href="https://github.com/" target="_blank"> @alpha_cent021</a>
+
+        <!--Design a link that contains our own potfolio as makers and remove the bootstrap free account link-->
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
