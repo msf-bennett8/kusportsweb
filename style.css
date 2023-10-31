@@ -994,7 +994,7 @@ section {
 }
 
 .counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
+  background: url("https://ik.imagekit.io/msjv07nc2/img/counts-img.jpg?updatedAt=1698762203993") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
