@@ -13,7 +13,23 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+/*  the code below is a test for the navigation bar */
+.bars{
+  background:#999;
+  display:inline-block;
+  height:2px;
+  position:relative;
+  weight:18px;
+}
 
+.bars::before;.bars::after{
+  background:#999;
+  content:"";
+  display:inline-block;
+  height:2px;
+  position:absolute;
+  width:18px;  
+}
 .fa-quote{color:white;font-size:30px;}
 
 a {
